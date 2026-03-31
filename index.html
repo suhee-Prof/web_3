@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Park Suhee Portfolio</title>
+
+  <!-- Google Font (비슷한 느낌) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #efefec;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      padding: 40px 60px;
+      position: relative;
+    }
+
+    /* 상단 텍스트 */
+    .top-text {
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .top-text a {
+      text-decoration: none;
+      color: #222;
+      margin-right: 10px;
+    }
+
+    .top-text a:hover {
+      color: #00bfa6;
+    }
+
+    /* 포트폴리오 큰 글자 */
+    .title {
+      font-size: 120px;
+      font-weight: 800;
+      letter-spacing: 5px;
+      color: #000;
+    }
+
+    /* 2020 느낌 텍스트 */
+    .year {
+      position: absolute;
+      top: 140px;
+      right: 80px;
+      font-size: 60px;
+      color: #00bfa6;
+      font-weight: 300;
+      transform: rotate(-5deg);
+    }
+
+    /* 메인 이미지 */
+    .person {
+      position: absolute;
+      left: 20%;
+      top: 200px;
+      width: 300px;
+    }
+
+    /* 고양이 */
+    .cat {
+      position: absolute;
+      width: 120px;
+    }
+
+    .cat1 {
+      bottom: 50px;
+      left: 50px;
+    }
+
+    .cat2 {
+      bottom: 40px;
+      right: 80px;
+    }
+
+    /* 반응형 */
+    @media (max-width: 1024px) {
+      .title {
+        font-size: 80px;
+      }
+
+      .person {
+        width: 250px;
+        left: 10%;
+      }
+
+      .year {
+        font-size: 40px;
+        right: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+
+      .title {
+        font-size: 50px;
+      }
+
+      .person {
+        position: static;
+        display: block;
+        margin: 40px auto;
+      }
+
+      .year {
+        position: static;
+        text-align: right;
+        margin-top: 10px;
+      }
+
+      .cat1, .cat2 {
+        position: static;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .cats {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- 상단 링크 -->
+    <div class="top-text">
+      <a href="park.html">PARK SUHEE</a> /
+      <a href="mom.html">MOM</a> /
+      <a href="professor.html">PROFESSOR</a>
+    </div>
+
+    <!-- 메인 타이틀 -->
+    <div class="title">PORTFOLIO</div>
+
+    <!-- 연도 느낌 -->
+    <div class="year">2020</div>
+
+    <!-- 사람 이미지 -->
+    <img src="person.png" class="person" alt="person">
+
+    <!-- 고양이 -->
+    <div class="cats">
+      <img src="cat1.png" class="cat cat1" alt="cat1">
+      <img src="cat2.png" class="cat cat2" alt="cat2">
+    </div>
+
+  </div>
+
+</body>
+</html>
